@@ -1,0 +1,30 @@
+{
+    "name": "axllent/silverstripe-auto-delete",
+    "description": "Silverstripe auto-delete $has_one/$has_many relationships",
+    "type": "silverstripe-vendormodule",
+    "homepage": "https://github.com/axllent/silverstripe-auto-delete",
+    "keywords": [
+        "silverstripe",
+        "image",
+        "file",
+        "dataobject"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ralph Slooten",
+            "homepage": "http://www.axllent.org/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/axllent/silverstripe-auto-delete/issues"
+    },
+    "require": {
+        "silverstripe/assets": "^1.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Axllent\\AutoDelete\\": "src/"
+        }
+    }
+}
