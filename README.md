@@ -17,7 +17,7 @@ All DataObjects get two additional new functions which you can integrate into ot
 
 ## Usage
 
-In your DataObject, add a `private static $auto_delete = [....];` variable, defining which related `$has_one` and `$has_many` DataObjects to automatically delete, for example:
+In your defined DataObject, add a `private static $auto_delete = [....];` variable, defining which related `$has_one` and `$has_many` DataObjects to automatically delete, for example:
 
 ```php
 class Slide extends DataObject {
@@ -43,7 +43,7 @@ This will automatically delete the `Image` (if unused elsewhere) if the `Slide` 
 
 ## Notes
 
-Auto-delete cannot recursively delete a `$has_many` objects, as it will only delete if the object is no longer linked to any other DataObject.
+Auto-delete cannot recursively delete a `$has_many` objects, as it will only delete if the object is no longer linked to any other DataObject. If you wish to recursively delete objects then you should do that manually via `onBeforeDelete()` or `'onAfterDelete()`.
 
 
 ## Requirements
