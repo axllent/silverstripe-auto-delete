@@ -2,7 +2,6 @@
 namespace Axllent\AutoDelete;
 
 use SilverStripe\Assets\Folder;
-use SilverStripe\Assets\Shortcodes\FileLink;
 use SilverStripe\Core\Extension;
 use SilverStripe\Security\Member;
 use SilverStripe\Versioned\ChangeSetItem;
@@ -22,7 +21,6 @@ class AutoDeleteExtension extends Extension
                 'ClassName', [
                     ChangeSetItem::class,
                     Member::class,
-                    FileLink::class,
                     Folder::class,
                 ]
             )
